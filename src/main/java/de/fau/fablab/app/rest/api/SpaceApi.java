@@ -18,7 +18,4 @@ public interface SpaceApi {
     @Produces(MediaType.APPLICATION_JSON)
     HackerSpace getSpace(@PathParam("space") String space);
 
-    @GET
-    @Path("/update")
-    String updateDoorState(@QueryParam("hash") String hash, @QueryParam("data") String data);
 }
